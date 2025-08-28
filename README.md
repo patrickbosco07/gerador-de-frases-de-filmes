@@ -1,26 +1,60 @@
-![thumbnail-Desafio Java (1)](https://github.com/jacqueline-oliveira/3356-java-desafio-front/assets/66698429/6f1cf2db-ca91-493b-b37c-2c08ad2afc50)
+# 🎬 Gerador de Frases de Filmes
 
-# Front-end da aplicação: Frases clássicas de filmes e séries ScreenMatch
+Um projeto **full stack** que gera e exibe frases clássicas de filmes e séries.  
+O **backend** foi desenvolvido com **Java 17 e Spring Boot**, enquanto o **frontend** utiliza **HTML, CSS e JavaScript**.
 
-Essa é a aplicação Front-end que será utilizada no desafio proposto na última aula do curso.
+---
 
-Para visualizar a mesma, após o download ou clone do projeto, abra-a com o VS Code
+## 🚀 Tecnologias Utilizadas
 
-Caso não possua, instale a extensão *Live Server*.
+### Backend
+- 🟢 **Java 17**
+- 🟢 **Spring Boot 3.5.3**
+  - Spring Web
+  - Spring Data JPA
+  - Spring Boot DevTools
+- 🐘 **PostgreSQL**
+- 📦 **Maven** (gerenciamento de dependências)
 
-Feito isso, clique com o botão direito no arquivo **index.html** e escolha "Open with Live Server".
+### Frontend
+- 🌐 **HTML5**
+- 🎨 **CSS3**
+- ⚡ **JavaScript (ES6+)**
 
-A princípio, caso a sua API ainda não esteja desenvolvida, o conteúdo que você verá será esse abaixo:
+---
+
+## ⚙️ Como Executar o Projeto
+
+### Pré-requisitos
+- ✅ Java 17+
+- ✅ Maven
+- ✅ PostgreSQL rodando localmente
+
+### Backend
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/patrickbosco07/gerador-de-frases-de-filmes.git
+   cd gerador-de-frases-de-filmes/backend
+
+2. Configure o PostgreSQL no arquivo application.properties:
+
+      spring.datasource.url=jdbc:postgresql://localhost:5432/nomedobanco
+      
+      spring.datasource.username=seu_usuario
+      
+      spring.datasource.password=sua_senha
+      
+      spring.jpa.hibernate.ddl-auto=update
+
+3. Rode a aplicação:
+mvn spring-boot:run
 
 
-![image](https://github.com/jacqueline-oliveira/3356-java-desafio-front/assets/66698429/4b612a93-09d8-4376-8c30-8b18fbecd2fc)
+4. Acesse a API backend:
+http://localhost:8080
 
+### Frontend
 
+1. Entre na pasta frontend/
 
-Após a finalização do desafio, seu projeto estará completo e a aplicação irá mostrar os dados, de forma similar à abaixo:
-
-
-![image](https://github.com/jacqueline-oliveira/3356-java-desafio-front/assets/66698429/bbd2799d-1360-4f0d-9330-f3a002c1a8c4)
-
-
-# Bom desafio!
+1. Abra o arquivo index.html em um navegador ou use um servidor local, como o Live Server do VSCode.
